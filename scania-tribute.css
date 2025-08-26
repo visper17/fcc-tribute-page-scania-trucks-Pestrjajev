@@ -1,0 +1,116 @@
+body {
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
+  filter: blur(1px) brightness(0.7);
+}
+
+#main {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(4px) saturate(120%);
+  max-width: 750px;
+  margin: 40px auto 0 auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  position: relative;
+  z-index: 2;
+}
+
+#scania-logo {
+  display: block;
+  width: 120px; /* Changed from 160px to 120px for smaller logo */
+  height: auto;
+  margin: 0 auto 18px auto;
+  filter: drop-shadow(0 2px 8px rgba(25,71,106,0.10));
+  background: transparent;
+}
+
+#title {
+  text-align: center;
+  color: #19476a;
+  font-size: 2.2em;
+  margin-bottom: 18px;
+}
+
+#img-div {
+  margin: 0 auto 24px auto;
+  text-align: center;
+}
+
+#image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(25,71,106,0.15);
+}
+
+#img-caption {
+  margin-top: 10px;
+  color: #19476a;
+  font-size: 1.1em;
+}
+
+#tribute-info {
+  margin: 28px 0 18px 0;
+  font-size: 1.15em;
+  color: #222;
+}
+
+#tribute-info ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+#tribute-link {
+  display: block;
+  width: fit-content;
+  margin: 24px auto 0 auto;
+  padding: 10px 18px;
+  background: #19476a;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(25,71,106,0.13);
+  transition: background 0.2s;
+}
+
+#tribute-link:hover {
+  background: #2c5b8a;
+}
+
+@media (max-width: 800px) {
+  #main {
+    padding: 15px;
+  }
+  #title {
+    font-size: 1.5em;
+  }
+  #scania-logo {
+    width: 75px; /* Make logo even smaller on mobile */
+  }
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
